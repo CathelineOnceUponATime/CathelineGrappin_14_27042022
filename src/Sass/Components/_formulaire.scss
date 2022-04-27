@@ -1,0 +1,15 @@
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  fieldset {
+    margin-top: 20px;
+    legend {
+      margin-left: -40px;
+    }
+  }
+  button {
+    margin-top: 20px;
+  }
+}
