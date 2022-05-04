@@ -1,15 +1,37 @@
-form {
+.form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   fieldset {
     margin-top: 20px;
     legend {
-      margin-left: -40px;
+      margin-left: -75px;
     }
   }
   button {
     margin-top: 20px;
+  }
+}
+.modal {
+  width: 200px;
+  height: 75px;
+  padding-top: 10px;
+  border-radius: 20px;
+  background-color: rosybrown;
+  margin: auto;
+  margin-top: 400px;
+  position: relative;
+  .closeModal {
+    cursor: pointer;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url('../../assets/closeModal.png');
   }
 }

@@ -1,8 +1,10 @@
 import Champ from './Champ'
+import Dropdown from './Dropdown'
+import ModalForm from './ModalForm'
 
 function Formulaire () {
   return (
-    <form>
+    <div className='form'>
       <Champ nom='First Name' type='text' />
       <Champ nom='Last Name' type='text' />
       <Champ nom='Date of Birth' type='date' />
@@ -11,11 +13,12 @@ function Formulaire () {
         <legend> Address </legend>
         <Champ nom='Street' type='text' />
         <Champ nom='City' type='text' />
-        {/* state : liste déroulante */}
+        <Dropdown label='State' state />
         <Champ nom='Zip Code' type='number' />
       </fieldset>
-      <button> Save </button>
-    </form>
+      <Dropdown label='Department' />
+      <ModalForm />
+    </div>
   )
 }
 

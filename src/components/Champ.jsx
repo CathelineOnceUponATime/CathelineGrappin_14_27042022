@@ -1,5 +1,5 @@
 function Champ ({ nom, type }) {
-  let nomFormat = nom.replace(' ', '-')
+  let nomFormat = nom.replaceAll(' ', '-')
   nomFormat = nomFormat.toLowerCase()
   return (
     <div className='champ'>
