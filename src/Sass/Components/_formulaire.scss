@@ -1,14 +1,23 @@
 .form {
   display: flex;
   flex-direction: column;
+  background-color: $couleur-quatre;
+  padding: 20px 50px;
+  border-radius: 25px;
+  label {
+    font-size: 18px;
+  }
   fieldset {
     margin-top: 20px;
+    border-radius: 15px;
+    padding: 0px 20px 20px 20px;
+    border-color: $couleur-secondaire;
     legend {
-      margin-left: -75px;
+      margin-left: -50px;
     }
   }
-  button {
-    margin-top: 20px;
+  .react-datepicker-wrapper {
+    width: auto;
   }
 }
 .modal {
@@ -16,10 +25,11 @@
   height: 75px;
   padding-top: 10px;
   border-radius: 20px;
-  background-color: rosybrown;
+  background-color: $couleur-tertiaire;
   margin: auto;
   margin-top: 400px;
   position: relative;
+  color: $couleur-primaire;
   .closeModal {
     cursor: pointer;
     position: absolute;
@@ -29,9 +39,28 @@
     height: 20px;
     padding: 15px;
     border-radius: 50%;
+    border: 2px solid $couleur-primaire;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    background-image: url('../../assets/closeModal.png');
+    background-color: $couleur-secondaire;
+    background-image: url('../../assets/close.png');
+  }
+}
+#button-save {
+  margin-top: 20px;
+  font-size: 18px;
+  width: 100px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 4px 4px $couleur-tertiaire;
+  background-color: $couleur-secondaire;
+  color: $couleur-primaire;
+  border: 1px solid $couleur-tertiaire;
+  &:hover {
+    cursor: pointer;
+    border: 2px solid $couleur-tertiaire;
+    filter: brightness(110%);
   }
 }

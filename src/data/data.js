@@ -259,39 +259,48 @@ export const struct =
 [
   {
     name: 'First Name',
-    key: 'firstName'
+    selector: row => row.firstName,
+    sortable: true
   },
   {
     name: 'Last Name',
-    key: 'lastName'
+    selector: row => row.lastName,
+    sortable: true
   },
   {
     name: 'Start Date',
-    key: 'startDate'
+    selector: row => row.startDate,
+    sortable: true
   },
   {
     name: 'Department',
-    key: 'department'
+    selector: row => row.department,
+    sortable: true
   },
   {
     name: 'Birth Date',
-    key: 'birthDate'
+    selector: row => row.dateOfBirth,
+    sortable: true
   },
   {
     name: 'Street',
-    key: 'street'
+    selector: row => row.street,
+    sortable: true
   },
   {
     name: 'City',
-    key: 'city'
+    selector: row => row.city,
+    sortable: true
   },
   {
     name: 'State',
-    key: 'state'
+    selector: row => row.state,
+    sortable: true
   },
   {
     name: 'Zip Code',
-    key: 'zipCode'
+    selector: row => row.zipCode,
+    sortable: true
   }
 ]
 
@@ -303,7 +312,7 @@ export const data =
     lastName: 'GRAPPIN',
     startDate: '10/10/2022',
     department: 'Sales',
-    birthDate: '09/08/1995',
+    dateOfBirth: '09/08/1995',
     street: 'stree',
     city: 'Le Havre',
     state: 'AL',
@@ -315,7 +324,7 @@ export const data =
     lastName: 'Dicke',
     startDate: '29/12/2002',
     department: 'Engineering',
-    birthDate: '28/03/1992',
+    dateOfBirth: '28/03/1992',
     street: 'truc',
     city: 'Alabama',
     state: 'AZ',

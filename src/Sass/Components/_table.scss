@@ -1,54 +1,47 @@
 .table {
-  width: 75%;
+  width: 90%;
   margin: auto;
-  table{
-    width: 100%;
+  margin-bottom: 20px;
+  header, div, nav {
+    font-size: 14px;
+    color: $couleur-primaire;
+    background-color: $couleur-tertiaire;
   }
-  .tableHeader {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    &-show {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      p {
-        margin: 0px 10px;
-      }
+  .rdt_TableHead {
+    div, .rdt_TableCol_Sortable {
+      font-size: 16px;
+      color: $couleur-quatre;
     }
   }
-  .tableBody {
-    margin: 20px 0px;
-    th {
-      border-bottom: 1px solid black;
-      padding: 15px;
-      a {
-        text-decoration: none;
-        color: rosybrown;
-      }
-    }
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: $couleur-quatre $couleur-primaire;
   }
-  .tableFooter {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
   }
-  .sorting {
-    background-image: url('../../assets/sort_both.png');
-    background-repeat: no-repeat;
-    background-position: center right;
-    &-asc {
-      background-image: url('../../assets/sort_asc.png');
-      background-repeat: no-repeat;
-      background-position: center right;
-    }
-    &-desc {
-      background-image: url('../../assets/sort_desc.png');
-      background-repeat: no-repeat;
-      background-position: center right;
-    }
+  
+  *::-webkit-scrollbar-track {
+    background: $couleur-primaire;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: $couleur-quatre;
+    border-radius: 20px;
+    border: 3px solid $couleur-secondaire;
+  }
+}
+#btn-filter {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  cursor: pointer;
+  padding: 1px 5px;
+  margin: 0 5px;
+  &:hover {
+    background-color: $couleur-secondaire;
+    border-radius: 50%;
   }
 }

@@ -4,10 +4,22 @@
 
 import Modal from 'react-modal'
 import { useState } from 'react'
+import { useNavigate } from 'react-router'
 
+/**
+ * Function ModalForm permet d'ouvrir une popup
+ * afin d'informer l'utilisation de la sauvegarde
+ * des données d'un nouvel employé
+ * @returns component
+ */
 function ModalForm () {
   const [modalIsOpen, setIsOpen] = useState(false)
+  const navigate = useNavigate()
 
+  /**
+   * function saveEmployee permettant de
+   * sauvegarder dans le localStorage les données d'un employé
+   */
   function saveEmployee () {
     const firstName = document.getElementById('first-name')
     const lastName = document.getElementById('last-name')
@@ -25,8 +37,10 @@ function ModalForm () {
       lastName: lastName.value,
       dateOfBirth: dateOfBirth.value,
       startDate: startDate.value,
+      department: department.value,
       street: street.value,
       city: city.value,
+      state: state.value,
       zipCode: zipCode.value
     }
     employees.push(employee)
@@ -40,16 +54,17 @@ function ModalForm () {
 
   function closeModal () {
     setIsOpen(false)
+    navigate('/Employees')
   }
 
   return (
     <div>
-      <button onClick={openModal}>Save</button>
+      <button onClick={openModal} id='button-save'>Save</button>
       <Modal
         className='modal'
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
-        contentLabel='Example Modal'
+        appElement={document.getElementById('root') || undefined}
       >
         <h3> Employee Created ! </h3>
         <button onClick={closeModal} className='closeModal' />
