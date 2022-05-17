@@ -1,0 +1,14 @@
+@keyframes load-spinner {
+	0%, 40%, 80%{
+        transform:  translateX(0) scale(0.5) ;
+        opacity: 0.5;
+	}
+    20%, 60%{
+        transform:  scale(0.9);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(0.5) translateX(-20px);
+        opacity: 1;
+    }
+}

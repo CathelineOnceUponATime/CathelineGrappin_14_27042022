@@ -3,13 +3,22 @@
 /* eslint no-undef: "error" */
 
 import { struct } from '../data/data'
-import { useState, useMemo, lazy, Suspense } from 'react'
+import { useState, useEffect, useMemo, lazy, Suspense } from 'react'
 
 function Table () {
   const DataTable = lazy(() => import('react-data-table-component'))
-  const data = JSON.parse(localStorage.getItem('employees'))
+  const [data, setData] = useState([])
   const [filterText, setFilterText] = useState('')
   const [resetPaginationToggle, setResetPaginationToggle] = useState(false)
+
+  useEffect(() => {
+    recupereData()
+  }, [])
+
+  function recupereData () {
+    const employees = JSON.parse(localStorage.getItem('employees'))
+    setData(employees)
+  }
 
   const filteredItems = data?.filter(
     item => ((item.firstName && item.firstName.toLowerCase().includes(filterText.toLowerCase())) ||

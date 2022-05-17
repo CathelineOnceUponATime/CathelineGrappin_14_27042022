@@ -1,5 +1,5 @@
 import Champ from './Champ'
-import Dropdown from './Dropdown'
+import { Dropdown } from 'dropdown-onceuponatime'
 import ModalForm from './ModalForm'
 import { states, departments } from '../data/data'
 

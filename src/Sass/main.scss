@@ -1,14 +1,13 @@
 @import './Utils/variables';
 @import './Utils/mixins';
+@import './Utils/animations';
 
 @import './Base/typography';
 
 @import './Components/champ';
-@import './Components/dropdown';
 @import './Components/formulaire';
 @import './Components/table';
 @import './Components/error';
-@import './Components/selectMenu';
 @import './Components/loading';
 
 @import './Pages/accueil';
