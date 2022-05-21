@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# HRnet
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Projet 14 - Faites passer une librairie jQuery vers React
 
-## Available Scripts
+## Author 
 
-In the project directory, you can run:
+- Catheline GRAPPIN
 
-### `npm start`
+## Technologies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [![Made-with-Javascript](https://img.shields.io/badge/Made%20with-Javascript-green)](https://developer.mozilla.org/fr/docs/Web/JavaScript)
+- [![Sassv_1.51.1](https://img.shields.io/badge/Sass-v_1.51.0-ff69b4)](https://sass-lang.com/)
+- [![React-v_18.1.0](https://img.shields.io/badge/React-v_18.1.0-blue)](https://fr.reactjs.org/)
+- [![React-Router-v_6.3.0](https://img.shields.io/badge/React_Router-v_6.3.0-22577A)](https://reactrouter.com/docs/en/v6)
+- [![React-data-table-component-v_7.5.1](https://img.shields.io/badge/React_Data_Table_Component-v_7.5.1-38A3A5)](https://react-data-table-component.netlify.app/?path=/story/getting-started-intro--page)
+- [![React-datepicker-v_4.7.0](https://img.shields.io/badge/React_Datepicker-v_4.7.0-57CC99)](https://www.npmjs.com/package/react-datepicker)
+- [![React-modal-v_3.15.1](https://img.shields.io/badge/React_modal-v_3.15.1-C7F9CC)](https://www.npmjs.com/package/react-modal)
+- [![Dropdown_Onceuponatime-v_0.1.12](https://img.shields.io/badge/Dropdown_Onceuponatime-v_0.1.12-80ED99)](https://www.npmjs.com/package/dropdown-onceuponatime)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Environments
 
-### `npm test`
+https://github.com/CathelineOnceUponATime/CathelineGrappin_14_27042022
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Resources provided
 
-### `npm run build`
+https://github.com/OpenClassrooms-Student-Center/P12_Front-end
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- https://github.com/xdan/datetimepicker
+- https://github.com/kylefox/jquery-modal
+- https://github.com/jquery/jquery-ui/blob/main/ui/widgets/selectmenu.js
+- https://github.com/DataTables/DataTables
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
 
-### `npm run eject`
+- [![npm-v_7.24.1](https://img.shields.io/badge/npm-v_7.24.1-orange)](https://docs.npmjs.com/)
+- [![NodeJs-v_16.10.0](https://img.shields.io/badge/NodeJs-v_16.10.0-red)](https://nodejs.org/en/docs/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- VSCode
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Installing and launching
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Clone the repository of HRnet :
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+`git clone https://github.com/CathelineOnceUponATime/CathelineGrappin_14_27042022.git`
 
-## Learn More
+Inside this repository, install dependencies:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+`npm install`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Lauch on port 3000:
 
-### Code Splitting
+`npm start`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+HRnet is now rendered at URL `http://localhost:3000`

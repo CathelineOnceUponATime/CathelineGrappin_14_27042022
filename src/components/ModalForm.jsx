@@ -5,6 +5,7 @@
 import Modal from 'react-modal'
 import { useState } from 'react'
 import { useNavigate } from 'react-router'
+import { data as emp } from '../data/data'
 
 /**
  * Function ModalForm permet d'ouvrir une popup
@@ -43,6 +44,7 @@ function ModalForm () {
       state: state.value,
       zipCode: zipCode.value
     }
+    emp.push(employee)
     employees.push(employee)
     localStorage.setItem('employees', JSON.stringify(employees))
   }

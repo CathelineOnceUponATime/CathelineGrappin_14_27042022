@@ -3,8 +3,14 @@
 /* eslint no-undef: "error" */
 
 import { struct } from '../data/data'
+// import { data as emp } from '../data/data'
 import { useState, useEffect, useMemo, lazy, Suspense } from 'react'
 
+/**
+ * Function Table retourne
+ * un tableau récapitulant les informations des employés
+ * @returns component
+ */
 function Table () {
   const DataTable = lazy(() => import('react-data-table-component'))
   const [data, setData] = useState([])
@@ -15,21 +21,25 @@ function Table () {
     recupereData()
   }, [])
 
+  /**
+   * Function recupereData recupère les données
+   * des employés enregistré dans le localStorage
+   */
   function recupereData () {
     const employees = JSON.parse(localStorage.getItem('employees'))
     setData(employees)
   }
 
   const filteredItems = data?.filter(
-    item => ((item.firstName && item.firstName.toLowerCase().includes(filterText.toLowerCase())) ||
-    (item.lastName && item.lastName.toLowerCase().includes(filterText.toLowerCase())) ||
-    (item.department && item.department.toLowerCase().includes(filterText.toLowerCase())) ||
-    (item.dateOfBirth && item.dateOfBirth.toLowerCase().includes(filterText.toLowerCase())) ||
-    (item.startDate && item.startDate.toLowerCase().includes(filterText.toLowerCase())) ||
-    (item.state && item.state.toLowerCase().includes(filterText.toLowerCase())) ||
-    (item.city && item.city.toLowerCase().includes(filterText.toLowerCase())) ||
-    (item.street && item.street.toLowerCase().includes(filterText.toLowerCase())) ||
-    (item.zipCode && item.zipCode.toLowerCase().includes(filterText.toLowerCase())))
+    item => ((item.firstName && item?.firstName.toLowerCase().includes(filterText.toLowerCase())) ||
+    (item.lastName && item?.lastName.toLowerCase().includes(filterText.toLowerCase())) ||
+    (item.department && item?.department.toLowerCase().includes(filterText.toLowerCase())) ||
+    (item.dateOfBirth && item?.dateOfBirth.toLowerCase().includes(filterText.toLowerCase())) ||
+    (item.startDate && item?.startDate.toLowerCase().includes(filterText.toLowerCase())) ||
+    (item.state && item?.state.toLowerCase().includes(filterText.toLowerCase())) ||
+    (item.city && item?.city.toLowerCase().includes(filterText.toLowerCase())) ||
+    (item.street && item?.street.toLowerCase().includes(filterText.toLowerCase())) ||
+    (item.zipCode && (item?.zipCode + '').includes(filterText)))
   )
 
   const FilterComponent = ({ filterText, onFilter, onClear }) => (
@@ -59,6 +69,7 @@ function Table () {
       <div id='quat' />
     </div>
   )
+
   return (
     <div className='table'>
       <Suspense fallback={renderLoader()}>

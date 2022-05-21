@@ -1,3 +1,5 @@
+import { triBirthDate, triStartDate } from '../components/tools'
+
 export const states = [
   {
     name: 'Alabama',
@@ -270,7 +272,8 @@ export const struct =
   {
     name: 'Start Date',
     selector: row => row.startDate,
-    sortable: true
+    sortable: true,
+    sortFunction: triStartDate
   },
   {
     name: 'Department',
@@ -280,7 +283,8 @@ export const struct =
   {
     name: 'Birth Date',
     selector: row => row.dateOfBirth,
-    sortable: true
+    sortable: true,
+    sortFunction: triBirthDate
   },
   {
     name: 'Street',
@@ -310,24 +314,144 @@ export const data =
     id: 1,
     firstName: 'Catheline',
     lastName: 'GRAPPIN',
-    startDate: '10/10/2022',
+    startDate: '10/10/2020',
     department: 'Sales',
-    dateOfBirth: '09/08/1995',
+    dateOfBirth: '08/09/1995',
     street: 'stree',
     city: 'Le Havre',
     state: 'AL',
-    zipCode: 9
+    zipCode: 27950
   },
   {
     id: 2,
     firstName: 'Charles',
     lastName: 'Dicke',
-    startDate: '29/12/2002',
+    startDate: '12/29/2002',
     department: 'Engineering',
-    dateOfBirth: '28/03/1992',
+    dateOfBirth: '03/28/1992',
     street: 'truc',
     city: 'Alabama',
     state: 'AZ',
-    zipCode: -10
+    zipCode: 33500
+  },
+  {
+    id: 3,
+    firstName: 'Freddy',
+    lastName: 'Jacob',
+    startDate: '04/24/2004',
+    department: 'Human Resources',
+    dateOfBirth: '08/18/1968',
+    street: 'Tennessee',
+    city: 'Connecticut',
+    state: 'ND',
+    zipCode: 69520
+  },
+  {
+    id: 4,
+    firstName: 'Alfred',
+    lastName: 'Fedder',
+    startDate: '03/27/2002',
+    department: 'Engineering',
+    dateOfBirth: '01/20/1995',
+    street: 'rue turpis',
+    city: 'California',
+    state: 'MN',
+    zipCode: 14000
+  },
+  {
+    id: 5,
+    firstName: 'Bryan',
+    lastName: 'Zieme',
+    startDate: '11/20/2010',
+    department: 'Engineering',
+    dateOfBirth: '04/26/1984',
+    street: 'la 13ème rue',
+    city: 'New York',
+    state: 'NY',
+    zipCode: 75000
+  },
+  {
+    id: 6,
+    firstName: 'Clarissa',
+    lastName: 'McMeyler',
+    startDate: '09/02/2012',
+    department: 'Legal',
+    dateOfBirth: '07/03/1997',
+    street: 'Mauris Valicinis',
+    city: 'Colorada',
+    state: 'MD',
+    zipCode: 76800
+  },
+  {
+    id: 7,
+    firstName: 'Danna',
+    lastName: 'Willmut',
+    startDate: '03/02/2021',
+    department: 'Sales',
+    dateOfBirth: '01/05/1993',
+    street: 'rue 36 versus',
+    city: 'Florida',
+    state: 'UT',
+    zipCode: 96880
+  },
+  {
+    id: 8,
+    firstName: 'Marine',
+    lastName: 'Verkus',
+    startDate: '11/10/2012',
+    department: 'Sales',
+    dateOfBirth: '08/03/1975',
+    street: 'rue Louis Bleriot',
+    city: 'Virginia',
+    state: 'SD',
+    zipCode: 27200
+  },
+  {
+    id: 9,
+    firstName: 'Kevin',
+    lastName: 'Mishthe',
+    startDate: '10/01/2018',
+    department: 'Marketing',
+    dateOfBirth: '01/03/1997',
+    street: 'rue de l\'horloge',
+    city: 'Louisiana',
+    state: 'KY',
+    zipCode: 69850
+  },
+  {
+    id: 10,
+    firstName: 'Nora',
+    lastName: 'Gainsboroug',
+    startDate: '09/13/2017',
+    department: 'Human Resources',
+    dateOfBirth: '07/17/1991',
+    street: 'rue du sapin',
+    city: 'Michigan',
+    state: 'HI',
+    zipCode: 54200
+  },
+  {
+    id: 11,
+    firstName: 'Laurent',
+    lastName: 'Wolche',
+    startDate: '02/28/2015',
+    department: 'Marketing',
+    dateOfBirth: '01/23/1989',
+    street: 'rue du Texas',
+    city: 'Texas',
+    state: 'NH',
+    zipCode: 98650
+  },
+  {
+    id: 12,
+    firstName: 'Marie',
+    lastName: 'Ruche',
+    startDate: '04/30/2012',
+    department: 'Legal',
+    dateOfBirth: '05/05/1992',
+    street: 'rue Kigin',
+    city: 'Nebraska',
+    state: 'ND',
+    zipCode: 17320
   }
 ]
