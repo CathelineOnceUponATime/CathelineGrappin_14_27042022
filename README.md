@@ -1,3 +1,5 @@
+![logo-du-projet](https://github.com/CathelineOnceUponATime/CathelineGrappin_14_27042022/blob/main/src/assets/Logo%20HRnet.png)
+
 # HRnet
 
 > Projet 14 - Faites passer une librairie jQuery vers React
