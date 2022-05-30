@@ -21,6 +21,15 @@
 
 https://github.com/CathelineOnceUponATime/CathelineGrappin_14_27042022
 
+https://hrnet-cathelineonceuponatime.netlify.app/
+
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=CathelineOnceUponATime_CathelineGrappin_14_27042022&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=CathelineOnceUponATime_CathelineGrappin_14_27042022)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=CathelineOnceUponATime_CathelineGrappin_14_27042022&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=CathelineOnceUponATime_CathelineGrappin_14_27042022)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=CathelineOnceUponATime_CathelineGrappin_14_27042022&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=CathelineOnceUponATime_CathelineGrappin_14_27042022)  
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=CathelineOnceUponATime_CathelineGrappin_14_27042022&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=CathelineOnceUponATime_CathelineGrappin_14_27042022)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=CathelineOnceUponATime_CathelineGrappin_14_27042022&metric=bugs)](https://sonarcloud.io/summary/new_code?id=CathelineOnceUponATime_CathelineGrappin_14_27042022)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=CathelineOnceUponATime_CathelineGrappin_14_27042022&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=CathelineOnceUponATime_CathelineGrappin_14_27042022)
+
 ## Resources provided
 
 https://github.com/OpenClassrooms-Student-Center/P12_Front-end
